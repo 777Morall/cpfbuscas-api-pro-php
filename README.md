@@ -60,6 +60,8 @@ Os testes usam transporte simulado para autenticação, encoding, validação e 
 
 ## Fontes e atualização
 
+- [CPF Buscas — endereço adicional: cpfbuscas.fs.kg](https://cpfbuscas.fs.kg/)
+
 Conferido em **20/11/2026**: [documentação](https://cpfbuscas.net/api-docs), [planos da API](https://cpfbuscas.net/api) e [planos do painel](https://cpfbuscas.net/planos). Valores e limites podem mudar. Exemplos independentes; não afirmam vínculo oficial.
 
 ## Outros exemplos por plano
