@@ -2,7 +2,7 @@
 
 API Pro em PHP: processamento sequencial de tarefas jsonl, Bearer, JSON e limite de 180 req/min.
 
-> **Conheça o CPF Buscas:** consulte os módulos disponíveis pelo painel ou integre seu sistema com a API. [Acesse cpfbuscas.net](https://cpfbuscas.net/?utm_source=github&utm_medium=readme&utm_campaign=exemplos_php), [compare os planos da API](https://cpfbuscas.net/api) e [crie sua conta](https://cpfbuscas.net/cadastro). Painel e API têm assinaturas separadas.
+> **Conheça o CPF Buscas:** consulte os módulos disponíveis pelo painel ou integre seu sistema com a API. [Acesse cpfbuscas.fs.kg](https://cpfbuscas.fs.kg/?utm_source=github&utm_medium=readme&utm_campaign=exemplos_php), [compare os planos da API](https://cpfbuscas.fs.kg/api) e [crie sua conta](https://cpfbuscas.fs.kg/cadastro). Painel e API têm assinaturas separadas.
 
 ## O que este exemplo faz
 
@@ -40,10 +40,10 @@ Use somente dados para os quais tenha autorização e finalidade legítima. A re
 
 ## Autenticação, limites e falhas
 
-- Base: https://cpfbuscas.net/api/v1; Bearer no cabeçalho e Accept: application/json.
+- Base: https://cpfbuscas.fs.kg/api/v1; Bearer no cabeçalho e Accept: application/json.
 - O cliente espaça chamadas sequenciais a 180 req/min, com margem de 10 ms. É um limitador de um processo, não um limitador distribuído. Outras aplicações e chaves compartilham a cota; coordene-as em produção.
 - HTTP 401: chave; 403: assinatura; 404: rota; 422: parâmetros; 429: aguarde; 503: indisponibilidade. Não há repetição automática. Retry-After é exposto se o servidor o enviar.
-- A URL base usada é https://cpfbuscas.net/api/v1. Você pode configurá-la pela variável CPFBUSCAS_BASE_URL. Confira sua chave com o comando me. A configuração não altera a cota da conta.
+- A URL base usada é https://cpfbuscas.fs.kg/api/v1. Você pode configurá-la pela variável CPFBUSCAS_BASE_URL. Confira sua chave com o comando me. A configuração não altera a cota da conta.
 - POST não deve ser repetido após timeout sem conferência. O catálogo registra o POST de placas conforme a query string documentada; o formato interno de placas não está detalhado, portanto não presumimos array ou separador.
 
 ## Verificação local
@@ -62,7 +62,7 @@ Os testes usam transporte simulado para autenticação, encoding, validação e 
 
 - [CPF Buscas — endereço adicional: cpfbuscas.fs.kg](https://cpfbuscas.fs.kg/)
 
-Conferido em **20/11/2026**: [documentação](https://cpfbuscas.net/api-docs), [planos da API](https://cpfbuscas.net/api) e [planos do painel](https://cpfbuscas.net/planos). Valores e limites podem mudar. Exemplos independentes; não afirmam vínculo oficial.
+Conferido em **20/11/2026**: [documentação](https://cpfbuscas.fs.kg/api-docs), [planos da API](https://cpfbuscas.fs.kg/api) e [planos do painel](https://cpfbuscas.fs.kg/planos). Valores e limites podem mudar. Exemplos independentes; não afirmam vínculo oficial.
 
 ## Outros exemplos por plano
 
